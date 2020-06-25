@@ -2,6 +2,8 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- speaking_language
+- bot_language
 - greet
 - goodbye
 - affirm
@@ -105,6 +107,8 @@ responses:
       إلا على أجر الساعات التي عمل فيها فعلاً .ويحسب أجر الساعة للعامل المحدد أجره
       على أساس الشهر بقسمة الأجر الشامل على المدة التي يمنح عنها الأجر ثم على عدد
       الساعات الأصلية طبقا لعقد العمل أو طبقا للقانون أيهما أقل .
+  utter_bot_language:
+  - text: عذراً لا أجيد التحدث إلا باللغة العربية
 actions:
 - utter_greet
 - utter_cheer_up
@@ -122,3 +126,4 @@ actions:
 - utter_special_leave
 - utter_working_hours
 - utter_wages
+- utter_bot_language
